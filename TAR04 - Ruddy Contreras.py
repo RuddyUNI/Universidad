@@ -1,4 +1,5 @@
-#Ruddy Contreras 21-1826
+#Ruddy Contreras 21-1826 - Tema: Veces que se repite una palabra
+
 #Escriba un programa que permita crear una lista de palabras y que, 
 #a continuación, pida una palabra y diga cuántas veces aparece esa palabra en la lista.
 

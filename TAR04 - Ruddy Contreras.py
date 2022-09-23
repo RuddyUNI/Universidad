@@ -6,7 +6,7 @@
 
 
 #Ponemos algunos input para que se declaren las variables que el usuario quiera.
-print("Escriba 5 palabras diferentes para crear la lista")
+print("Escriba 5 palabras para crear la lista")
 a= input("Escriba la primera palabra: ")
 b= input("Escriba la segunda palabra: ")
 c= input("Escriba la tercera palabra: ")

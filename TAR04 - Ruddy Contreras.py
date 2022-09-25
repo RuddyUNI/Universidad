@@ -14,48 +14,22 @@ d= input("Escriba la cuarta palabra: ")
 e= input("Escriba la quinta palabra: ")
 
 #Juntamos todas las variables en una sola.
-variables= a, b, c, d, e
+variables= [a, b, c, d, e]
 
 #Hacemos la lista de las palabras que ha escogido el usuario.
 print("La lista que has creado es:", variables,)
 
 #Ponemos un input para que el usuario escoga su palabra.
 palabra= input("Escriba una palabra: ")
+variables.count(palabra)
 
-#Ponemos en cada variable que sume 1 numero si la palabra se parece y en caso contrario ponga un 0.
-if palabra == a:
-    a1= 1
-elif palabra != a:
-    a1=0
+#Declaramos una variable para que printee cuantas veces se repite la palabra.
+x= variables.count(palabra)
+print("La palabra", palabra, "se repite", x, "veces")
 
-if palabra == b:
-    b1= 1
-elif palabra != b:
-    b1= 0
-
-if palabra == c:
-    c1= 1
-elif palabra != c:
-    c1=0
-
-if palabra == d:
-    d1= 1
-elif palabra != d:
-    d1=0
-
-if palabra == e:
-    e1= 1
-elif palabra != e:
-    e1=0
-
-#Sumamos cada variable para saber el total de veces que se repite la misma variable.
-resultado= (a1 + b1 + c1 + d1 + e1)
-print("La palabra", palabra, "se repite", resultado, "veces")
-
-#Ponemos que si la palabra que escoge el usuario no se parece a ninguna variable
-#ponga que la palabra introducida no esta en la lista.
-if palabra != a != b != c != d != e:
-    print("La palabra", palabra, "no esta en su lista.")
-
+#Ponemos que si la variable x es igual a 0 aparezca un texto que pone
+#que la palabra introducida por el usuario no esta en la lista.
+if x == 0:
+    print("La palabra", palabra, "no esta en la lista.")
 
 input()
